@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.select {
+  padding-top: 10px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+ul li {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid black;
+  padding: 10px 30px 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+ul li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+ul li:last-child {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+
+ul li:hover{
+  cursor: pointer;
+  background-color: rgb(254, 255, 207);
+}
+
+.choose-color {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  padding: 10px 30px 10px 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.choose-color:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.choose-color:focus {
+  box-shadow: 2px 2px 2px 2px #b8b0ae;
+}
+
+.select-wrap {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.choose-color::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/arrowDown.png);
+  background-size: contain;
+}
+
+.hidden {
+  display: none;
+}
