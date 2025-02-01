@@ -8,12 +8,27 @@
   </head>
   <body>
     <div class="select">
-      <button type="button" class="choose-color">Choose your color...</button>
-      <ul class="select-wrap hidden">
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Green</li>
-        <li>Yellow</li>
+      <button
+        type="button"
+        class="choose-color"
+        id="menuButton"
+        aria-haspopup="menu"
+        aria-expanded="false"
+      >
+        Choose your color...
+      </button>
+      <ul
+        class="select-wrap hidden"
+        aria-labelledby="menuButton"
+        aria-haspopup="true"
+        aria-hidden="true"
+        role="menu"
+        id="dropdown-menu"
+      >
+        <li role="menuitem" tabindex="0">Red</li>
+        <li role="menuitem" tabindex="0">Blue</li>
+        <li role="menuitem" tabindex="0">Green</li>
+        <li role="menuitem" tabindex="0">Yellow</li>
       </ul>
     </div>
     <script src="/script.js"></script>
