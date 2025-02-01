@@ -42,9 +42,13 @@ ul li:last-child {
   border-radius: 0 0 10px 10px;
 }
 
-ul li:hover{
+ul li:hover {
   cursor: pointer;
-  background-color: rgb(254, 255, 207);
+  background-color: rgb(233, 233, 186);
+}
+
+ul li:active {
+  background-color: lightblue;
 }
 
 .choose-color {
@@ -91,4 +95,36 @@ ul li:hover{
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .select {
+    width: 50%;
+  }
+
+  .choose-color {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  ul li {
+    font-size: 16px;
+    padding: 5px 30px 5px 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .select {
+    width: 60%;
+  }
+
+  .choose-color {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  ul li {
+    font-size: 16px;
+    padding: 5px 30px 5px 15px;
+  }
 }
