@@ -25,7 +25,7 @@ ul {
   border-radius: 10px;
 }
 
-ul li {
+.select-wrap-item {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid black;
@@ -33,21 +33,21 @@ ul li {
   transition: background-color 0.3s ease;
 }
 
-ul li:first-child {
+.select-wrap-item:first-child {
   border-radius: 10px 10px 0 0;
 }
 
-ul li:last-child {
+.select-wrap-item:last-child {
   border-bottom: none;
   border-radius: 0 0 10px 10px;
 }
 
-ul li:hover {
+.select-wrap-item:hover {
   cursor: pointer;
-  background-color: rgb(233, 233, 186);
+  background-color: rgb(240, 240, 240);
 }
 
-ul li:active {
+.select-wrap-item:active {
   background-color: lightblue;
 }
 
@@ -97,6 +97,10 @@ ul li:active {
   display: none;
 }
 
+.selected {
+  background-color: rgb(240, 240, 240);
+}
+
 @media screen and (max-width: 768px) {
   .select {
     width: 50%;
@@ -107,7 +111,7 @@ ul li:active {
     height: 30px;
   }
 
-  ul li {
+  .select-wrap-item {
     font-size: 16px;
     padding: 5px 30px 5px 15px;
   }
@@ -123,7 +127,7 @@ ul li:active {
     height: 30px;
   }
 
-  ul li {
+  .select-wrap-item {
     font-size: 16px;
     padding: 5px 30px 5px 15px;
   }
